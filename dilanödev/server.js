@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
-const router = require("./router/router"); // Router yolunu kontrol et!
+const router = require("./router/router"); 
 
-app.use(express.json()); // JSON verisini okuyabilmesi için gerekli!
+app.use(express.json()); 
 
 app.use(router);
 app.get("matematik/hesapla", (req, res) => {
